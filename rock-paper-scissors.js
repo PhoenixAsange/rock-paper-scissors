@@ -18,8 +18,19 @@ function computerChoice() {
 
 function playerChoice() {
   let playerChoice = prompt("Do you choose rock, paper, or scissors.");
-  playerChoice = playerChoice.toLowerCase();
-  return playerChoice;
+
+  if (playerChoice.toLowerCase() === "rock" || playerChoice.toLowerCase() === "paper" || playerChoice.toLowerCase() === "scissors") {
+    return playerChoice; 
+  }
+  else {
+    for (;;) {
+      console.log(`${playerChoice} is not a valid input, try again.`);
+      playerChoice = prompt("Do you choose rock, paper, or scissors.");
+      if (playerChoice.toLowerCase() === "rock" || playerChoice.toLowerCase() === "paper" || playerChoice.toLowerCase() === "scissors") {
+        break;
+      }
+    }
+  }
 }
 
 function playRound(computerChoice, playerChoice) {
