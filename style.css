@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.heading {
+  font-size: 50px;
+  padding-bottom: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.choices div {
+  padding: 50px;
+  border-color: black;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.score-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.window {
+  display: flex;
+  height: 250px;
+  border:1px solid #ccc;
+  font:16px/26px Georgia, Garamond, Serif;
+  overflow:auto;
+}
+
+.running {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.running div {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 2.5px;
+}
